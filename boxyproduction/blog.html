@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - Mon Site Freelance</title>
+  <link rel="stylesheet" href="styles/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Blog</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="#articles">Articles</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="publier-article">
+      <h2>Publier un nouvel article</h2>
+      <form id="articleForm">
+        <input type="text" placeholder="Titre de l'article" required>
+        <textarea placeholder="Contenu de l'article" required></textarea>
+        <button type="submit">Publier</button>
+      </form>
+      <div id="articleMessage"></div>
+    </section>
+    <section id="articles">
+      <h2>Articles récents</h2>
+      <article>
+        <h3>Bienvenue sur le blog</h3>
+        <p>Des conseils, astuces et actualités sur le freelancing et le web.</p>
+        <section class="commentaires">
+          <h4>Laisser un commentaire</h4>
+          <form class="commentForm">
+            <input type="text" placeholder="Votre nom" required>
+            <textarea placeholder="Votre commentaire" required></textarea>
+            <button type="submit">Envoyer</button>
+          </form>
+          <div class="commentMessage"></div>
+        </section>
+      </article>
+      <!-- Ajoute ici tes futurs articles -->
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Mon Nom - Freelance</p>
+  </footer>
+  <script src="styles/js/blog.js"></script>
+</body>
+</html>

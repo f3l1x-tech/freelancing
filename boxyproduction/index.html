@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon Site Freelance</title>
+  <link rel="stylesheet" href="styles/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Bienvenue sur mon site freelance</h1>
+    <nav>
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="#annonce">Publier une annonce</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="services">
+      <h2>Mes services</h2>
+      <p>Développement web, design, conseils...</p>
+    </section>
+    <section id="portfolio">
+      <h2>Portfolio</h2>
+      <p>Quelques réalisations à venir.</p>
+    </section>
+    <section id="annonce">
+      <h2>Publier une annonce d'offre</h2>
+      <form id="annonceForm">
+        <input type="text" placeholder="Titre de l'annonce" required>
+        <textarea placeholder="Description de l'offre" required></textarea>
+        <input type="text" placeholder="Votre nom ou entreprise" required>
+        <button type="submit">Publier</button>
+      </form>
+      <div id="annonceMessage"></div>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <form id="contactForm">
+        <input type="text" placeholder="Votre nom" required>
+        <input type="email" placeholder="Votre email" required>
+        <textarea placeholder="Votre message" required></textarea>
+        <button type="submit">Envoyer</button>
+      </form>
+      <div id="formMessage"></div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Mon Nom - Freelance</p>
+  </footer>
+  <script src="styles/js/script.js"></script>
+</body>
+</html>

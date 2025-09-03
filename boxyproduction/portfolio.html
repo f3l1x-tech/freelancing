@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Mon Site Freelance</title>
+  <link rel="stylesheet" href="styles/css/portfolio.css">
+</head>
+<body>
+  <header>
+    <h1>Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="projets">
+      <h2>Mes réalisations</h2>
+      <div id="portfolioList">
+        <!-- Les projets ajoutés s'afficheront ici -->
+      </div>
+    </section>
+    <section id="admin-update">
+      <h2>Ajouter / Mettre à jour un projet (admin)</h2>
+      <form id="portfolioForm">
+        <input type="text" placeholder="Nom du projet" required>
+        <textarea placeholder="Description" required></textarea>
+        <input type="url" placeholder="Lien du projet (optionnel)">
+        <button type="submit">Enregistrer</button>
+      </form>
+      <div id="portfolioMessage"></div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Mon Nom - Freelance</p>
+  </footer>
+  <script src="styles/js/portfolio.js"></script>
+</body>
